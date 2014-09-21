@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7" # Default
 install:
-  - pip install -r requirements.txt # Default
+  - pip install -r requirements.txt -q # Default
 script:
   - cp .env.example .env
   - python manage.py test
