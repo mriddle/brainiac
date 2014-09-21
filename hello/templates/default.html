@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Matthew Riddle - Software Developer</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="http://mriddle.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://mriddle.com/css/stylesheet.css">
+    <link rel="stylesheet" href="{% static 'brainiac/stylesheet.css' %}">
+    <script src="http://mriddle.com/js/jquery-1.11.1.min.js"></script>
+    <script src="http://mriddle.com/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="ribbon right grey">
+      <a href="http://mriddle.com">mriddle.com</a>
+    </div>
+    <div id="navigation">
+      <a id="avatar"
+         title="@mriddle89"
+         href="/">
+         <img src="http://mriddle.com/img/avatar.jpeg" />
+      </a>
+      <p id="bio">
+        I'm Matt Riddle. I <a href="http://www.strava.com/athletes/2064252">ride bikes</a> and <a href="http://github.com/mriddle/">write software</a>. I work at <a href="http://www.lonelyplanet.com/">Lonely Planet</a>.
+      </p>
+    </div>
+
+    <div id='container'>
+      {% block content %}{% endblock %}
+    </div>
+
+  </body>
+</html>
