@@ -11,3 +11,5 @@ before_script:
 script:
   - python manage.py test
   - flake8 .
+notifications:
+  email: false
