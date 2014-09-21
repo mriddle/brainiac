@@ -3,13 +3,16 @@ python:
   - "2.7" # Default
 install:
   - pip install -r requirements.txt -q # Default
+  - pip install coveralls
 addons:
   postgresql: "9.3"
 before_script:
   - cp .env.example .env
   - psql -c 'create database brainiac;' -U postgres
 script:
-  - python manage.py test
+  - coverage run --source=hello,brainiac manage.py test
   - flake8 .
+after_succcess:
+  coveralls
 notifications:
   email: false
