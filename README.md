@@ -8,8 +8,8 @@ Assists with my learning of Python, basic data structures and algorithms. Will d
 Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
+$ git clone git@github.com:mriddle/brainiac.git
+$ cd brainiac
 $ pip install -r requirements.txt
 $ python manage.py syncdb
 $ foreman start web
