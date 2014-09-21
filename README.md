@@ -11,6 +11,7 @@ Make sure you have Python [installed properly](http://install.python-guide.org).
 $ git clone git@github.com:mriddle/brainiac.git
 $ cd brainiac
 $ pip install -r requirements.txt
+$ find . -name '*.example' | grep '^[\.c]' | perl -pE 's/^(.*?)\.example/$1/' | xargs -IFILE cp -v FILE.example FILE
 $ python manage.py syncdb
 $ foreman start web
 ```
