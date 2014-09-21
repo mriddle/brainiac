@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mriddle/brainiac.svg?branch=master)](https://travis-ci.org/mriddle/brainiac)
+[![Build Status](https://travis-ci.org/mriddle/brainiac.svg?branch=master)](https://travis-ci.org/mriddle/brainiac) [![Coverage Status](https://coveralls.io/repos/mriddle/brainiac/badge.png)](https://coveralls.io/r/mriddle/brainiac)
 
 Brainiac
 ========
