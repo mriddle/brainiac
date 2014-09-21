@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,10 +6,14 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
     <link rel="stylesheet" href="http://mriddle.com/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://mriddle.com/css/stylesheet.css">
+    <link rel="stylesheet" href="{% static 'brainiac/stylesheet.css' %}">
     <script src="http://mriddle.com/js/jquery-1.11.1.min.js"></script>
     <script src="http://mriddle.com/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="ribbon right grey">
+      <a href="http://mriddle.com">mriddle.com</a>
+    </div>
     <div id="navigation">
       <a id="avatar"
          title="@mriddle89"
