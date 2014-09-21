@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mriddle/brainiac.svg?branch=master)](https://travis-ci.org/mriddle/brainiac)
+
 Brainiac
 ========
 
