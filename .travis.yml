@@ -10,7 +10,7 @@ before_script:
   - cp .env.example .env
   - psql -c 'create database brainiac;' -U postgres
 script:
-  - coverage run --source=hello,brainiac manage.py test
+  - coverage run --source=hello manage.py test
   - flake8 .
 after_succcess:
   coveralls
