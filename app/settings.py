@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_nose',
-    'hello'
+    'brainiac'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,9 +52,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'brainiac.urls'
+ROOT_URLCONF = 'app.urls'
 
-WSGI_APPLICATION = 'brainiac.wsgi.application'
+WSGI_APPLICATION = 'app.wsgi.application'
 
 
 # Database
