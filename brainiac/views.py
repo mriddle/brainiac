@@ -5,5 +5,5 @@ def index(request):
     return render(request, 'index.html')
 
 
-def bubbleSort(request):
+def bubble_sort(request):
     return render(request, 'bubble_sort.html')
