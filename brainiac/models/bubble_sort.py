@@ -11,7 +11,7 @@ class BubbleSort:
                 self.sort(to_sort, steps)
         return to_sort
 
-    def verify_sort_steps(self, to_sort):
+    def sort_steps(self, to_sort):
         steps = []
         self.sort(to_sort, steps)
         return steps

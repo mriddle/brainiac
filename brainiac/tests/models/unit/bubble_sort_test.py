@@ -14,7 +14,7 @@ class BubbleSortTest(TestCase):
         actual = self.subject.sort(self.to_sort)
         self.assertEqual(expected, actual)
 
-    def test_verify_sort_steps(self):
+    def test_sort_steps(self):
         expected = [
             [1, 8, 5, 6, 4, 9, 7, 2, 10, 3],
             [1, 5, 8, 6, 4, 9, 7, 2, 10, 3],
@@ -38,5 +38,5 @@ class BubbleSortTest(TestCase):
             [1, 2, 4, 3, 5, 6, 7, 8, 9, 10],
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         ]
-        actual = self.subject.verify_sort_steps(self.to_sort)
+        actual = self.subject.sort_steps(self.to_sort)
         self.assertEqual(expected, actual)
