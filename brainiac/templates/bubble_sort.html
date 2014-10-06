@@ -42,10 +42,11 @@
         <small>Answer should be submitted as an array of arrays</small>
       </p>
     </div>
-    {% if valid == True %}
+    {% if valid %}
       <div class="alert alert-success" role="alert">Correct!</div>
     {% elif valid == False %}
       <div class="alert alert-danger" role="alert">Well that's a shame</div>
+      <div class="alert alert-info" role="alert">The answer was: {{ actual }}</div>
     {% endif %}
     <div class="panel-body">
       <form role="form" action="/submit-bubble-sort-answer/" method="post">
