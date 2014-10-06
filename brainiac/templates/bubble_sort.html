@@ -42,12 +42,16 @@
         <small>Answer should be submitted as an array of arrays</small>
       </p>
     </div>
+    {% if valid == True %}
+      <div class="alert alert-success" role="alert">Correct!</div>
+    {% elif valid == False %}
+      <div class="alert alert-danger" role="alert">Well that's a shame</div>
+    {% endif %}
     <div class="panel-body">
       <form role="form" action="/submit-bubble-sort-answer/" method="post">
-        <div class="form-group">
+        {% csrf_token %}
           <label for="bubble_sort_answer"><small>A:</small></label>
-          <textarea id="bubble_sort_answer" class="form-control" rows="5"></textarea>
-        </div>
+          <textarea id="bubble_sort_answer" name="bubble_sort_answer" class="form-control" rows="5"></textarea>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
