@@ -15,3 +15,7 @@ class BubbleSort:
         steps = []
         self.sort(to_sort, steps)
         return steps
+
+    def compare(self, to_sort, given):
+        actual = self.sort_steps(to_sort)
+        return actual == given
